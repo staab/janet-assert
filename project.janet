@@ -3,4 +3,4 @@
  :description "An assertion library for Janet")
 
 (declare-source
-  :source ["janet-assert"])
+  :source ["staab.assert"])
