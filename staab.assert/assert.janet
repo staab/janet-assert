@@ -4,6 +4,9 @@
 (defn assert= [a b]
   (assert (= a b) (string/format "(not= %q %q)" a b)))
 
+(defn assert-deep= [a b]
+  (assert (deep= a b) (string/format "(deep-not= %q %q)" a b)))
+
 (defmacro assert-err [& body]
   ~(do
     (var threw? false)
